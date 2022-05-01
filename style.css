@@ -1,7 +1,19 @@
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    touch-action: none;
+} */
+.container {
+    /* position: absolute; */
+    height: 512px;
+    width: 512px;
+    align-items: center;
+    touch-action: none;
+    border: 12px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .row {
     display: flex;
@@ -14,4 +26,24 @@
     margin: 0px;
     width: 2vw;
     height: 2vw;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.clicked {
+    display: flex;
+    /* border: 0px solid black; */
+    background-color: white;
+    margin: 0px;
+    width: 2vw;
+    height: 2vw;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
